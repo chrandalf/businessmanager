@@ -1,0 +1,70 @@
+{
+  "name": "MVP Industrial Tech",
+  "industry": "industrial_software",
+  "difficulty": "normal",
+  "eventChance": 0.65,
+  "initialFinance": {
+    "cash": 550000,
+    "debt": 300000,
+    "equity": 850000,
+    "revenue": 420000,
+    "cogs": 220000,
+    "opex": 90000,
+    "capex": 0,
+    "interestRate": 0.08
+  },
+  "initialWorkforce": {
+    "headcount": 420,
+    "morale": 67,
+    "productivity": 70,
+    "burnout": 32,
+    "attrition": 9
+  },
+  "regions": [
+    {"name": "North America", "demandIndex": 102, "regulatoryRisk": 38},
+    {"name": "EMEA", "demandIndex": 96, "regulatoryRisk": 48}
+  ],
+  "businessUnits": [
+    {"name": "Core Platform", "revenueShare": 0.45, "baseMargin": 0.32, "innovationFocus": 0.6},
+    {"name": "Services", "revenueShare": 0.35, "baseMargin": 0.24, "innovationFocus": 0.4},
+    {"name": "Emerging Products", "revenueShare": 0.2, "baseMargin": 0.18, "innovationFocus": 0.85}
+  ],
+  "initiatives": [
+    {
+      "name": "Automation Upgrade",
+      "budget": 38000,
+      "shortTermImpact": "opex pressure during rollout",
+      "delayedImpact": "higher productivity and margin",
+      "confidence": 0.76,
+      "effects": {"workforce.productivity": 3, "innovationVelocity": 1, "riskExposure": -1}
+    },
+    {
+      "name": "Leadership Development",
+      "budget": 25000,
+      "shortTermImpact": "training hours reduce throughput temporarily",
+      "delayedImpact": "better engagement and retention",
+      "confidence": 0.71,
+      "effects": {"workforce.morale": 4, "workforce.burnout": -2, "reputation": 1}
+    },
+    {
+      "name": "Tech Debt Cleanup",
+      "budget": 34000,
+      "shortTermImpact": "feature velocity slows",
+      "delayedImpact": "quality and risk reduction",
+      "confidence": 0.82,
+      "effects": {"technicalDebt": -5, "riskExposure": -2, "innovationVelocity": -1, "customerRetention": 2}
+    }
+  ],
+  "events": [
+    {"name": "Cyber Breach Attempt", "category": "crisis", "severity": "high", "effects": {"riskExposure": 6, "reputation": -5, "finance.cash": -30000}},
+    {"name": "Critical Supplier Delay", "category": "operations", "severity": "medium", "effects": {"riskExposure": 4, "finance.revenue": -25000}},
+    {"name": "Labor Negotiation Win", "category": "people", "severity": "medium", "effects": {"workforce.morale": 5, "workforce.attrition": -1}},
+    {"name": "Regulatory Fine", "category": "governance", "severity": "high", "effects": {"finance.cash": -45000, "reputation": -4, "riskExposure": 5}},
+    {"name": "Compliance Certification", "category": "governance", "severity": "low", "effects": {"riskExposure": -4, "reputation": 2}},
+    {"name": "Market Demand Surge", "category": "market", "severity": "medium", "effects": {"finance.revenue": 32000, "investorSentiment": 2}},
+    {"name": "Price War", "category": "market", "severity": "high", "effects": {"finance.revenue": -28000, "customerRetention": -2}},
+    {"name": "Product Recall", "category": "crisis", "severity": "high", "effects": {"finance.cash": -38000, "reputation": -7, "riskExposure": 6}},
+    {"name": "Flagship Launch Success", "category": "innovation", "severity": "medium", "effects": {"finance.revenue": 36000, "innovationVelocity": 4, "reputation": 3}},
+    {"name": "Negative Press Cycle", "category": "reputation", "severity": "medium", "effects": {"reputation": -4, "customerRetention": -2}}
+  ]
+}

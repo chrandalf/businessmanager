@@ -1,0 +1,110 @@
+{
+  "name": "MVP Industrial Tech",
+  "industry": "industrial_software",
+  "difficulty": "normal",
+  "event_chance": 0.65,
+  "initial_finance": {
+    "cash": 550000,
+    "debt": 300000,
+    "equity": 850000,
+    "revenue": 420000,
+    "cogs": 220000,
+    "opex": 90000,
+    "capex": 0,
+    "interest_rate": 0.08
+  },
+  "initial_workforce": {
+    "headcount": 420,
+    "morale": 67,
+    "productivity": 70,
+    "burnout": 32,
+    "attrition": 9
+  },
+  "regions": [
+    {"name": "North America", "demand_index": 102, "regulatory_risk": 38},
+    {"name": "EMEA", "demand_index": 96, "regulatory_risk": 48}
+  ],
+  "business_units": [
+    {"name": "Core Platform", "revenue_share": 0.45, "base_margin": 0.32, "innovation_focus": 0.6},
+    {"name": "Services", "revenue_share": 0.35, "base_margin": 0.24, "innovation_focus": 0.4},
+    {"name": "Emerging Products", "revenue_share": 0.2, "base_margin": 0.18, "innovation_focus": 0.85}
+  ],
+  "initiatives": [
+    {
+      "name": "Automation Upgrade",
+      "budget": 38000,
+      "short_term_impact": "opex pressure during rollout",
+      "delayed_impact": "higher productivity and margin",
+      "confidence": 0.76,
+      "effects": {
+        "workforce.productivity": 3,
+        "innovation_velocity": 1,
+        "risk_exposure": -1
+      }
+    },
+    {
+      "name": "Leadership Development",
+      "budget": 25000,
+      "short_term_impact": "training hours reduce throughput temporarily",
+      "delayed_impact": "better engagement and retention",
+      "confidence": 0.71,
+      "effects": {
+        "workforce.morale": 4,
+        "workforce.burnout": -2,
+        "reputation": 1
+      }
+    },
+    {
+      "name": "Market Expansion Push",
+      "budget": 46000,
+      "short_term_impact": "sales and channel spend increases",
+      "delayed_impact": "revenue growth and brand reach",
+      "confidence": 0.62,
+      "effects": {
+        "finance.revenue": 18000,
+        "reputation": 2,
+        "risk_exposure": 2,
+        "customer_retention": 1
+      }
+    },
+    {
+      "name": "Tech Debt Cleanup",
+      "budget": 34000,
+      "short_term_impact": "feature velocity slows",
+      "delayed_impact": "quality and risk reduction",
+      "confidence": 0.82,
+      "effects": {
+        "technical_debt": -5,
+        "risk_exposure": -2,
+        "innovation_velocity": -1,
+        "customer_retention": 2
+      }
+    }
+  ],
+  "events": [
+    {"name": "Cyber Breach Attempt", "category": "crisis", "severity": "high", "effects": {"risk_exposure": 6, "reputation": -5, "finance.cash": -30000}},
+    {"name": "Critical Supplier Delay", "category": "operations", "severity": "medium", "effects": {"risk_exposure": 4, "finance.revenue": -25000}},
+    {"name": "Labor Negotiation Win", "category": "people", "severity": "medium", "effects": {"workforce.morale": 5, "workforce.attrition": -1}},
+    {"name": "Key Talent Exodus", "category": "people", "severity": "high", "effects": {"workforce.productivity": -4, "workforce.attrition": 3, "innovation_velocity": -2}},
+    {"name": "Regulatory Fine", "category": "governance", "severity": "high", "effects": {"finance.cash": -45000, "reputation": -4, "risk_exposure": 5}},
+    {"name": "Compliance Certification", "category": "governance", "severity": "low", "effects": {"risk_exposure": -4, "reputation": 2}},
+    {"name": "Market Demand Surge", "category": "market", "severity": "medium", "effects": {"finance.revenue": 32000, "investor_sentiment": 2}},
+    {"name": "Price War", "category": "market", "severity": "high", "effects": {"finance.revenue": -28000, "customer_retention": -2}},
+    {"name": "Product Recall", "category": "crisis", "severity": "high", "effects": {"finance.cash": -38000, "reputation": -7, "risk_exposure": 6}},
+    {"name": "Flagship Launch Success", "category": "innovation", "severity": "medium", "effects": {"finance.revenue": 36000, "innovation_velocity": 4, "reputation": 3}},
+    {"name": "Prototype Failure", "category": "innovation", "severity": "medium", "effects": {"innovation_velocity": -3, "technical_debt": 2, "finance.cash": -20000}},
+    {"name": "Cloud Outage", "category": "operations", "severity": "medium", "effects": {"finance.revenue": -18000, "reputation": -2}},
+    {"name": "Channel Partnership", "category": "market", "severity": "low", "effects": {"finance.revenue": 15000, "customer_retention": 2, "reputation": 1}},
+    {"name": "Investor Activism", "category": "finance", "severity": "medium", "effects": {"board_confidence": -3, "investor_sentiment": -2, "risk_exposure": 2}},
+    {"name": "Debt Refinancing", "category": "finance", "severity": "low", "effects": {"finance.debt": -20000, "investor_sentiment": 2}},
+    {"name": "ESG Award", "category": "reputation", "severity": "low", "effects": {"reputation": 4, "investor_sentiment": 1}},
+    {"name": "Negative Press Cycle", "category": "reputation", "severity": "medium", "effects": {"reputation": -4, "customer_retention": -2}},
+    {"name": "Union Strike", "category": "people", "severity": "high", "effects": {"workforce.productivity": -5, "finance.revenue": -24000, "risk_exposure": 3}},
+    {"name": "AI Efficiency Breakthrough", "category": "innovation", "severity": "medium", "effects": {"workforce.productivity": 4, "innovation_velocity": 3, "finance.opex": -12000}},
+    {"name": "Ransomware Incident", "category": "crisis", "severity": "high", "effects": {"finance.cash": -42000, "risk_exposure": 7, "reputation": -5}},
+    {"name": "Data Privacy Audit Pass", "category": "governance", "severity": "low", "effects": {"risk_exposure": -3, "board_confidence": 2}},
+    {"name": "Emerging Market Softness", "category": "market", "severity": "medium", "effects": {"finance.revenue": -21000, "investor_sentiment": -1}},
+    {"name": "Customer Community Growth", "category": "reputation", "severity": "low", "effects": {"customer_retention": 3, "reputation": 2}},
+    {"name": "Board Strategy Alignment", "category": "governance", "severity": "low", "effects": {"board_confidence": 3, "investor_sentiment": 1}}
+  ]
+}
