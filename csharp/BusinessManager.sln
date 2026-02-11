@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessManager.Core", "src/BusinessManager.Core/BusinessManager.Core.csproj", "{18E0E7B5-9E2E-4E2D-9F38-85A4914B2A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessManager.App", "src/BusinessManager.App/BusinessManager.App.csproj", "{B4BB8E73-A840-4139-8B8D-7A1D041368C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessManager.Core.Tests", "tests/BusinessManager.Core.Tests/BusinessManager.Core.Tests.csproj", "{CA44A677-9226-4E8B-B172-C46D59E5F1A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18E0E7B5-9E2E-4E2D-9F38-85A4914B2A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E0E7B5-9E2E-4E2D-9F38-85A4914B2A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E0E7B5-9E2E-4E2D-9F38-85A4914B2A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E0E7B5-9E2E-4E2D-9F38-85A4914B2A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BB8E73-A840-4139-8B8D-7A1D041368C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BB8E73-A840-4139-8B8D-7A1D041368C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BB8E73-A840-4139-8B8D-7A1D041368C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BB8E73-A840-4139-8B8D-7A1D041368C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA44A677-9226-4E8B-B172-C46D59E5F1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA44A677-9226-4E8B-B172-C46D59E5F1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA44A677-9226-4E8B-B172-C46D59E5F1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA44A677-9226-4E8B-B172-C46D59E5F1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

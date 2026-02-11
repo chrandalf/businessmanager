@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusinessManager.App.Pages.DashboardPage"
+             Title="Executive Dashboard">
+    <Grid RowDefinitions="Auto,Auto,*,Auto" Padding="16" RowSpacing="12">
+        <Label Text="Enterprise Command Center" FontSize="24" FontAttributes="Bold" />
+        <Grid Grid.Row="1" ColumnDefinitions="*,*" ColumnSpacing="8">
+            <Frame Grid.Column="0" Padding="10" BackgroundColor="#1f2937">
+                <VerticalStackLayout>
+                    <Label Text="Revenue Growth" TextColor="White" />
+                    <Label x:Name="RevenueGrowthLabel" Text="0%" FontSize="20" TextColor="#34d399" />
+                </VerticalStackLayout>
+            </Frame>
+            <Frame Grid.Column="1" Padding="10" BackgroundColor="#1f2937">
+                <VerticalStackLayout>
+                    <Label Text="Resilience Index" TextColor="White" />
+                    <Label x:Name="ResilienceLabel" Text="0" FontSize="20" TextColor="#60a5fa" />
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+
+        <GraphicsView Grid.Row="2" x:Name="TrendChart" HeightRequest="260" />
+
+        <Button Grid.Row="3" Text="Advance Month" Clicked="OnAdvanceMonthClicked" />
+    </Grid>
+</ContentPage>
